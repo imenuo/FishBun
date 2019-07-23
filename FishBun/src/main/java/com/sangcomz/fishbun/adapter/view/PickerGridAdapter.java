@@ -181,7 +181,7 @@ public class PickerGridAdapter
         if (!isAnimation) duration = 0;
         float toScale;
         if (isSelected)
-            toScale = .8f;
+            toScale = 1.0f;
         else
             toScale = 1.0f;
 
