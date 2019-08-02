@@ -61,10 +61,10 @@ public class RadioWithTextButton extends View {
         mStrokePaint.setStrokeWidth(w / 18);
 
         if (isChecked()) {
-            canvas.drawCircle(w / 2, h / 2, w / 3, mCirclePaint);
+            canvas.drawCircle(w / 2, h / 2, w / 4, mCirclePaint);
             if (mText != null) {
                 int PADDING_TEXT = 20;
-                mTextWidth = (w / 3) * 2 - PADDING_TEXT;
+                mTextWidth = (w / 4) * 2 - PADDING_TEXT;
                 drawTextCentred(canvas, mTextPaint, mText, w / 2, h / 2);
             } else if (mDrawable != null) {
                 mDrawable.setBounds(getCenterRect());
@@ -72,7 +72,7 @@ public class RadioWithTextButton extends View {
             }
         } else {
             mStrokePaint.setStyle(Paint.Style.STROKE);
-            canvas.drawCircle(w / 2, h / 2, w / 3, mStrokePaint);
+            canvas.drawCircle(w / 2, h / 2, w / 4, mStrokePaint);
         }
 
     }
