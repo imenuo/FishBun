@@ -23,8 +23,8 @@
 
     <com.sangcomz.fishbun.util.RadioWithTextButton
         android:id="@+id/btn_thumb_count"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
         android:layout_gravity="right"
-        android:padding="5dp" />
+        android:padding="8dp" />
 </com.sangcomz.fishbun.util.SquareFrameLayout>
