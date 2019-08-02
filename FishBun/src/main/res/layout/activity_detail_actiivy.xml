@@ -32,12 +32,12 @@
 
     <com.sangcomz.fishbun.util.RadioWithTextButton
         android:id="@+id/btn_detail_count"
-        android:layout_width="46dp"
-        android:layout_height="46dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="19dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:padding="8dp"
+        android:padding="5dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
