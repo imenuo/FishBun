@@ -39,7 +39,7 @@ public class CameraUtil {
                 Uri uri;
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                     uri = FileProvider.getUriForFile(activity,
-                            activity.getApplicationContext().getPackageName() + ".provider", photoFile);
+                            activity.getApplicationContext().getPackageName() + ".fishbunfileprovider", photoFile);
                 } else {
                     uri = Uri.fromFile(photoFile);
                 }
@@ -51,6 +51,12 @@ public class CameraUtil {
     }
 
     private File createImageFile(String saveDir) throws IOException {
+
+        File dir = new File(saveDir);
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
+
         // Create an image file name
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageFileName = "JPEG_" + timeStamp + "_";
